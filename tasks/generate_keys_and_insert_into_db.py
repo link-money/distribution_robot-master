@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 
 import os
-
+import CONSTANT
 from wrapper import db as DB
 
-NUMBER=10000
-TABLE_NAME='\\keys.db'
+NUMBER=CONSTANT.NUMBER_OF_ACCOUNTS
+TABLE_NAME=CONSTANT.DB_NAME
 
 
 path=os.getcwd()
@@ -15,6 +15,7 @@ DB_NAME=path+TABLE_NAME
 my_sql_manager=DB.SQLManager(DB_NAME)
 
 # 构造表结构：
+# 私钥|公钥|起始数量|起始时间|是否激活
 column1=DB.Column("private_key","TEXT",False,None,False)
 column2=DB.Column("public_key","TEXT",False,None,False)
 column3=DB.Column("starting_balance","REAL",True,None,False)

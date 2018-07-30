@@ -4,7 +4,6 @@
 
 import random
 from binascii import b2a_hex, a2b_hex
-
 from Crypto.Cipher import AES
 
 

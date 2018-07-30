@@ -15,8 +15,8 @@ except ImportError:
     # Python 2
     from urllib import urlencode
 
-HORIZON_LIVE = "http://47.75.115.19:8888"
-HORIZON_TEST = "http://47.75.115.19:8888" #"https://horizon-testnet.stellar.org" #
+HORIZON_LIVE = "http://47.75.115.19:8888"   # 主API服务器
+HORIZON_TEST = "http://116.62.226.231:8888" # 测试API服务器
 
 
 def query(url, params=None, sse=False):

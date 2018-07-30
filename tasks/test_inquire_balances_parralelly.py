@@ -27,7 +27,6 @@ rows = my_sql_manager.execute('select * from keys order by ID asc limit 1024')
 addresses = []
 threads = []
 
-
 for i in range(512):
     address = rows[i][2]
     thread = threading.Thread(target=store_response, args=(address,))

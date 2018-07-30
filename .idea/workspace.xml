@@ -11,56 +11,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parallel_payment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/parallel_payment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activate_wallet_parallel.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/activate_wallet_parallel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding>
-                <element signature="e#156#184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CONSTANT.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/CONSTANT.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_keys_and_insert_into_db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/generate_keys_and_insert_into_db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="230">
+                <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -78,7 +37,6 @@
     <findStrings>
       <find>tx_bad_seq</find>
       <find>https://horizon-testnet.stellar.org</find>
-      <find>stellar</find>
       <find>Test SDF Network ; September 2015</find>
       <find>120.78.206.181</find>
       <find>horizon-test</find>
@@ -90,17 +48,22 @@
       <find>120.78.206</find>
       <find>fee</find>
       <find>horizon</find>
-      <find>fotono</find>
       <find>GA2LFB5XB2RV6P747JFICGSB7WKINPFVBSROTHZL5RKQZQTVMNGDK5LM</find>
       <find>sqlite</find>
       <find>AUTOINCREMENT</find>
       <find>create</find>
       <find>table</find>
       <find>table_name</find>
+      <find>http://47.75.115.19:8888</find>
+      <find>stellar</find>
+      <find>heimdar</find>
+      <find>fotono</find>
+      <find>deterministic</find>
     </findStrings>
     <replaceStrings>
       <replace>localhost</replace>
       <replace>get_balances</replace>
+      <replace>Loki</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/venv</dir>
@@ -108,6 +71,8 @@
       <dir>$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/stellar_base</dir>
       <dir>$PROJECT_DIR$/py-stellar-base/stellar_base</dir>
       <dir>G:\恒星项目\源代码\脚本\distribution_robot-master</dir>
+      <dir>G:\distribution_robot-master\wrapper\stellarxdr</dir>
+      <dir>G:\distribution_robot-master</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -116,39 +81,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/multi_thread.py" />
-        <option value="$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/stellar_base/asset.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/distributor_is_issuer.py" />
-        <option value="$PROJECT_DIR$/sdk/operation.py" />
-        <option value="$PROJECT_DIR$/sdk.py" />
-        <option value="$PROJECT_DIR$/test_for_issueing_assets.py" />
-        <option value="$PROJECT_DIR$/test_payment.py" />
-        <option value="$PROJECT_DIR$/test_issue_asset.py" />
-        <option value="$PROJECT_DIR$/wrapper/asset.py" />
-        <option value="$PROJECT_DIR$/tests/test_payment.py" />
-        <option value="$PROJECT_DIR$/tests/generate_key_pairs.py" />
-        <option value="$PROJECT_DIR$/wrapper/client.py" />
-        <option value="$PROJECT_DIR$/tests/decrypt_cypher.py" />
-        <option value="$PROJECT_DIR$/tests/fund_addresses.py" />
-        <option value="$PROJECT_DIR$/jiami.py" />
-        <option value="$PROJECT_DIR$/venv1/lib/python2.7/site-packages/stellar_base/horizon.py" />
-        <option value="$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/stellar_base/horizon.py" />
-        <option value="$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/stellar_base/network.py" />
-        <option value="$PROJECT_DIR$/venv1/lib/python2.7/site-packages/stellar_base/network.py" />
-        <option value="$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/stellar_base/builder.py" />
-        <option value="$PROJECT_DIR$/tests/test_create_account.py" />
         <option value="$PROJECT_DIR$/tests/test_for_issueing_assets.py" />
         <option value="$PROJECT_DIR$/tests/test_balance.py" />
         <option value="$PROJECT_DIR$/wrapper/builder.py" />
         <option value="$PROJECT_DIR$/tests/test_issue_asset.py" />
         <option value="$PROJECT_DIR$/tests/test.py" />
         <option value="$PROJECT_DIR$/py-stellar-base/stellar_base/network.py" />
-        <option value="$PROJECT_DIR$/wrapper/horizon.py" />
         <option value="$PROJECT_DIR$/wrapper/network.py" />
         <option value="$PROJECT_DIR$/tests/test_generate_key_pairs.py" />
         <option value="$PROJECT_DIR$/unit_tests/generate_key_pairs.py" />
-        <option value="$PROJECT_DIR$/wrapper/encryption.py" />
         <option value="$PROJECT_DIR$/unit_tests/parallel_payment.py" />
         <option value="$PROJECT_DIR$/unit_tests/db_init.py" />
         <option value="$PROJECT_DIR$/unit_tests/key_generation.py" />
@@ -157,20 +98,44 @@
         <option value="$PROJECT_DIR$/unit_tests/distribution_key_generation.py" />
         <option value="$PROJECT_DIR$/unit_tests/activate_wallet_parallel.py" />
         <option value="$PROJECT_DIR$/unit_tests/生成私钥并存入数据库.py" />
-        <option value="$PROJECT_DIR$/unit_tests/test_balance.py" />
         <option value="$PROJECT_DIR$/unit_tests/test_inquire_balances_parralelly.py" />
         <option value="$PROJECT_DIR$/tasks/distribution_key_generation.py" />
         <option value="$PROJECT_DIR$/tasks/生成私钥并存入数据库.py" />
         <option value="$PROJECT_DIR$/tasks/__init__.py" />
         <option value="$PROJECT_DIR$/tasks/activate_wallet_parallel.py" />
         <option value="$PROJECT_DIR$/readme" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tasks/generate_keys_and_insert_into_db.py" />
+        <option value="$PROJECT_DIR$/wrapper/horizon.py" />
         <option value="$PROJECT_DIR$/tasks/CONSTANT.py" />
+        <option value="$PROJECT_DIR$/unit_tests/test_balance.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/unit_tests/multiple_append_op.py" />
+        <option value="$PROJECT_DIR$/unit_tests/CONSTAT.py" />
+        <option value="$PROJECT_DIR$/unit_tests/test_all.py" />
+        <option value="$PROJECT_DIR$/unit_tests/CONSTANT.py" />
+        <option value="$PROJECT_DIR$/unit_tests/keys.json" />
+        <option value="$PROJECT_DIR$/unit_tests/tools/load_json.py" />
+        <option value="$PROJECT_DIR$/unit_tests/test_Client.py" />
+        <option value="$PROJECT_DIR$/tasks/test_inquire_balances_parralelly.py" />
+        <option value="$PROJECT_DIR$/examples/generate_key_pairs.py" />
+        <option value="$PROJECT_DIR$/examples/fund_addresses.py" />
+        <option value="$PROJECT_DIR$/examples/encrypt_something.py" />
+        <option value="$PROJECT_DIR$/wrapper/encryption.py" />
+        <option value="$PROJECT_DIR$/examples/pay_to_addresees.py" />
+        <option value="$PROJECT_DIR$/unit_tests/README.md" />
+        <option value="$PROJECT_DIR$/examples/encrypt_and_decrypt.py" />
+        <option value="$PROJECT_DIR$/wrapper/account.py" />
+        <option value="$PROJECT_DIR$/wrapper/address.py" />
+        <option value="$PROJECT_DIR$/examples/inquire_info.py" />
+        <option value="$PROJECT_DIR$/wrapper/client.py" />
+        <option value="$PROJECT_DIR$/examples/inquire_balances.py" />
+        <option value="$PROJECT_DIR$/examples/issue_asset.py" />
+        <option value="$PROJECT_DIR$/examples/inquire_link.py" />
+        <option value="$PROJECT_DIR$/examples/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -192,14 +157,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="distribution_robot" type="b2602c69:ProjectViewProjectNode" />
               <item name="distribution_robot-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="distribution_robot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="distribution_robot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="distribution_robot" type="b2602c69:ProjectViewProjectNode" />
@@ -216,10 +184,18 @@
               <item name="distribution_robot-master" type="462c0819:PsiDirectoryNode" />
               <item name="wrapper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="distribution_robot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="distribution_robot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="stellarxdr" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,15 +205,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\distribution_robot-master\examples" />
+      <recent name="G:\distribution_robot-master\wrapper" />
       <recent name="G:\恒星项目\源代码\脚本\distribution_robot-master\unit_tests" />
       <recent name="$PROJECT_DIR$/wrapper" />
       <recent name="$PROJECT_DIR$/sdk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\distribution_robot-master\examples" />
+      <recent name="G:\distribution_robot-master\unit_tests\tools" />
       <recent name="G:\distribution_robot-master\tasks" />
       <recent name="G:\恒星项目\源代码\脚本\distribution_robot-master\wrapper" />
       <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_inquire_balances_parralelly">
+  <component name="RunManager" selected="Python.inquire_link">
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,105 +322,105 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="activate_wallet_parallel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="encrypt_and_decrypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="distribution_robot" />
-      <option name="SCRIPT_NAME" value="G:\distribution_robot-master\tasks\activate_wallet_parallel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/encrypt_and_decrypt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="key_generation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_tests" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="distribution_robot" />
-      <option name="SCRIPT_NAME" value="G:\distribution_robot-master\tasks\key_generation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test_balance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="inquire_balances" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="distribution_robot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unit_tests/test_balance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/inquire_balances.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="inquire_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="distribution_robot" />
-      <option name="SCRIPT_NAME" value="G:\distribution_robot-master\tasks\generate_keys_and_insert_into_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/inquire_info.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test_inquire_balances_parralelly" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="inquire_link" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit_tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="distribution_robot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unit_tests/test_inquire_balances_parralelly.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/inquire_link.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="issue_asset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="distribution_robot" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/issue_asset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.key_generation" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_db" />
-      <item index="2" class="java.lang.String" itemvalue="Python.activate_wallet_parallel" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_balance" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_inquire_balances_parralelly" />
+      <item index="0" class="java.lang.String" itemvalue="Python.encrypt_and_decrypt" />
+      <item index="1" class="java.lang.String" itemvalue="Python.inquire_info" />
+      <item index="2" class="java.lang.String" itemvalue="Python.inquire_balances" />
+      <item index="3" class="java.lang.String" itemvalue="Python.issue_asset" />
+      <item index="4" class="java.lang.String" itemvalue="Python.inquire_link" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_inquire_balances_parralelly" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_balance" />
-        <item index="2" class="java.lang.String" itemvalue="Python.activate_wallet_parallel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_db" />
-        <item index="4" class="java.lang.String" itemvalue="Python.key_generation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.inquire_link" />
+        <item index="1" class="java.lang.String" itemvalue="Python.issue_asset" />
+        <item index="2" class="java.lang.String" itemvalue="Python.inquire_balances" />
+        <item index="3" class="java.lang.String" itemvalue="Python.inquire_info" />
+        <item index="4" class="java.lang.String" itemvalue="Python.encrypt_and_decrypt" />
       </list>
     </recent_temporary>
   </component>
@@ -471,8 +450,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -482,7 +460,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3975085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -533,7 +511,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/wrapper/client.py</url>
-          <line>66</line>
+          <line>78</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -542,19 +520,9 @@
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wrapper/client.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_generate_key_pairs.py</url>
           <line>33</line>
           <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wrapper/horizon.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_generate_key_pairs.py</url>
@@ -562,24 +530,24 @@
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/unit_tests/test_balance.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/unit_tests/test_balance.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/unit_tests/test_inquire_balances_parralelly.py</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/tasks/test_inquire_balances_parralelly.py</url>
+          <line>40</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/unit_tests/test_inquire_balances_parralelly.py</url>
+          <url>file://$PROJECT_DIR$/unit_tests/test_balance.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/generate_key_pairs.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/fund_addresses.py</url>
           <line>11</line>
-          <option name="timeStamp" value="138" />
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -589,362 +557,461 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="139" />
+      <option name="time" value="168" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_create_account.py">
+    <entry file="file://$PROJECT_DIR$/wrapper/federation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_for_issueing_assets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/ed25519/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/venv1/local/lib/python2.7/site-packages/toml.py" />
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_balance.py">
+    <entry file="file://$PROJECT_DIR$/wrapper/stellarxdr/StellarXDR_pack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/certifi/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tests/test.py">
+    <entry file="file://$PROJECT_DIR$/wrapper/stellarxdr/StellarXDR_const.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="-3266">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/keys.json">
+    <entry file="file://$PROJECT_DIR$/wrapper/stellarxdr/xdrgen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="0" column="177" lean-forward="false" selection-start-line="0" selection-start-column="177" selection-end-line="0" selection-end-column="177" />
+        <state relative-caret-position="184">
+          <caret line="533" column="52" lean-forward="true" selection-start-line="533" selection-start-column="52" selection-end-line="533" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/address.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1288">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/decrypt_cypher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/passphrase1531667841.81" />
-    <entry file="file://$PROJECT_DIR$/unit_tests/passphrase1531667943.85" />
-    <entry file="file://$PROJECT_DIR$/unit_tests/passphrase1531670125.8" />
-    <entry file="file://$PROJECT_DIR$/wrapper/keypair.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/encryption.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/sdk.py">
+    <entry file="file://$PROJECT_DIR$/wrapper/stellarxdr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/test_create_account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/test_generate_key_pairs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrapper/xdr/Stellar-ledger.x">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1817">
+        <state relative-caret-position="-3289">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sqlite4dummy/engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="3362" column="12" lean-forward="true" selection-start-line="3362" selection-start-column="12" selection-end-line="3362" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-762174762/_sqlite3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="172" column="35" lean-forward="false" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sqlite4dummy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sqlite4dummy/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="195" column="11" lean-forward="false" selection-start-line="195" selection-start-column="11" selection-end-line="195" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="716" column="16" lean-forward="true" selection-start-line="716" selection-start-column="16" selection-end-line="716" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/test_balance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#9#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/test_inquire_balances_parralelly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#9#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fund_addresses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/fund_addresses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/distribution_key_generation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/generate_key_pairs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="188" column="8" lean-forward="false" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/key_generation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/parallel_payment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/horizon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/federation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrapper/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#16#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/generate_keys_and_insert_into_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="966">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#25#34#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/parallel_payment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/CONSTANT.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="305">
+            <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_balance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#9#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/multiple_append_op.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/activate_wallet_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
           <folding>
-            <element signature="e#156#184#0" expanded="true" />
+            <element signature="e#156#184#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keys.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="922" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/horizon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/tools/load_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="445" column="35" lean-forward="false" selection-start-line="445" selection-start-column="27" selection-end-line="445" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/CONSTANT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1800" column="8" lean-forward="false" selection-start-line="1800" selection-start-column="8" selection-end-line="1800" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="234" column="35" lean-forward="true" selection-start-line="234" selection-start-column="35" selection-end-line="234" selection-end-column="35" />
+          <folding>
+            <element signature="e#16#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/mnemonic/mnemonic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/test_inquire_balances_parralelly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="321" column="0" lean-forward="false" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/keypair.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_create_account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/fund_addresses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#24#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/encryption.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/decrypt_cypher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="69">
+            <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/sdk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_for_issueing_assets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/wordlist/chinese.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="e#52#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_payment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/encrypt_and_decrypt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/inquire_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/inquire_balances.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/test_issue_asset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pay_to_addresees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#54#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CONSTANT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="e#16#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/keys.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/issue_asset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#118#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/inquire_link.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/generate_key_pairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="230">
+            <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

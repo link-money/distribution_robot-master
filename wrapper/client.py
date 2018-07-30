@@ -15,7 +15,7 @@ class Client:
             self.private_key=private_key
             self.api_server=api_server
             self.address=Keypair.from_seed(private_key).address().decode()
-            a=1
+
         # return Keypair.from_seed(private_key)
 
     def set_api_server(self, api_server):
@@ -40,8 +40,20 @@ class Client:
         builder.sign()
         result = builder.submit()
 
-    def get_balances(self):
-        address=Address(address=self.address,network=self.api_server)
+    def get_info(self, address=''):
+        if address=='':
+            address = Address(address=self.address, network=self.api_server)
+        else:
+            address = Address(address=address, network=self.api_server)
+        info=address.get()
+        return info
+
+
+    def get_balances(self, address=''):
+        if address=='':
+            address=Address(address=self.address,network=self.api_server)
+        else:
+            address = Address(address=address, network=self.api_server)
         address.get()
         self.balances=address.balances
         return address.balances

@@ -52,8 +52,9 @@ class Address(object):
                 self.flags = acc.get('flags')
                 self.signers = acc.get('signers')
                 self.data = acc.get('data')
+                return self
             elif acc.get('status') == 404:
-                raise AccountNotExistError(acc.get('title'))
+                return None
             else:
                 raise Exception(acc.get('detail'))
         except requests.ConnectionError:

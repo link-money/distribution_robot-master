@@ -46,7 +46,7 @@ class Horizon(object):
     def submit(self, te):
         params = {'tx': te}
         url = self.horizon + '/transactions/'
-        p = requests.post(url, data=params, )  # timeout=20
+        p = requests.post(url, data=params, timeout=65535)  # timeout=20
         return json.loads(p.text)
 
     def query(self, url, params=None, sse=False):

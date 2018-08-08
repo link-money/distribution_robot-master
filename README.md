@@ -15,18 +15,20 @@
 #### 6. [sqlite数据库操作类](wrapper/db.py)
 
 #### 7. [AES256加解密的操作类](wrapper/encryption.py)
-
-本程序在ubuntu16.04+python2.7及windows10+python2.7下测试通过
-
+<br>
+<br>
+本程序在ubuntu16.04+python2.7及windows10+python2.7下测试通过.
+<br>
 一些必要的依赖：
 crc16 ed25519 numpy mnemonic toml 等
-
+<br>
+### 使用说明：
+1. 执行 pip install -r requirements.txt 完成依赖的安装
+<br>
+2. 在构建Client类的时候，使用api_server='testnet'参数'连接到测试服务器，使用api_server='public'参数连接到主网
 ### 文件夹说明：
 1. [党员测试](unit_tests/README.md)
 2. [联金相关的业务](tasks/README.md)
 3. [一些例子](examples/README.md)
 
 
-### 使用说明：
-1. 执行 pip install -r requirements.txt 完成依赖的安装
-2. 在构建Client类的时候，使用api_server='testnet'参数'连接到测试服务器，使用api_server='public'参数连接到主网

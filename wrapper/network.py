@@ -1,8 +1,8 @@
 # coding: utf-8
 from .utils import xdr_hash
 
-NETWORKS = {'PUBLIC': 'Fotono Network Main Net; 2018-6-15',
-            'TESTNET': 'Fotono Network Main Net; 2018-6-15'}
+NETWORKS = {'PUBLIC': 'Fotono Main Net; 2018-8-10',
+            'TESTNET': 'Fotono Test Network; 2017-1-1'}
 
 
 class Network(object):

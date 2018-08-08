@@ -6,7 +6,7 @@ from wrapper.client import Client
 
 # 定义一个client，实际上也可以不定义，但通用方法，先定义一个client
 seed=CONSTANT.SEED
-client=Client(private_key=seed)
+client=Client(private_key=seed, api_server=CONSTANT.API_SERVER)
 
 # 临时定义一个遍历balaneces列表的方法，用于查询联金数量
 def get_link(balances):
@@ -15,7 +15,7 @@ def get_link(balances):
     balance=0
     for item in balances:
         item=dict(item)
-        if item.has_key('asset_code') and  item['asset_code']=='LINK' and item['asset_issuer']=='GCHZDZXYLZ76XADS7735LK3OJUFZ2TBSXAR23YXKXCXXHUEEVT5C37PY':
+        if item.has_key('asset_code') and  item['asset_code']=='LINK' and item['asset_issuer']==CONSTANT.ISSUER_ADDRESS:
             balance=item['balance']
             return balance
         else:

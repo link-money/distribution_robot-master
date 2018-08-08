@@ -11,13 +11,13 @@ print("secret key：%s\npublic key：%s" % (secret_key,address))
 
 
 # 根据随机字符数组产生密钥对
-key_pair=Keypair.deterministic('illness spike retreat truth genius clock brain pass fit cave bargain toe')
+key_pair=Keypair.deterministic('hello my name is ')
 secret_key=key_pair.seed().decode().encode('ascii')
 address=key_pair.seed().decode().encode('ascii')
 
-# 根据原始私钥生成密钥对
-seed=CONSTANT.SEED
-key_pair=Keypair.from_seed(seed)
-secret_key=key_pair.seed().decode().encode('ascii')
-address=key_pair.seed().decode().encode('ascii')
-a=1
+# # 根据原始私钥生成密钥对
+# seed=CONSTANT.SEED
+# key_pair=Keypair.from_seed(seed)
+# secret_key=key_pair.seed().decode().encode('ascii')
+# address=key_pair.seed().decode().encode('ascii')
+# a=1

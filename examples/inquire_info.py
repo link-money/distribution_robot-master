@@ -6,7 +6,7 @@ from wrapper.client import Client
 
 # 定义一个client，实际上也可以不定义，但通用方法，先定义一个client
 seed=CONSTANT.SEED
-client=Client(private_key=seed)
+client=Client(private_key=seed, api_server=CONSTANT.API_SERVER)
 # 查询任意一个地址的所有信息：
 info=client.get_info('GA4OP7NMIWWLKSCIXRYKVQC5L36OPIJHDYKW25EF5BWSR3P2MOHY4REZ')
 print(info)

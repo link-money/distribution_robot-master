@@ -15,8 +15,7 @@
 #### 6. [sqlite数据库操作类](wrapper/db.py)
 
 #### 7. [AES256加解密的操作类](wrapper/encryption.py)
-<br>
-<br>
+
 本程序在ubuntu16.04+python2.7及windows10+python2.7下测试通过.
 <br>
 一些必要的依赖：

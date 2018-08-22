@@ -173,7 +173,6 @@ def monitor(inteval=60):
                     item = {
                         "UserToken": users[k].token,
                         "LinkAddress": users[k].address,
-                        "LinkPrivateKey": users[k].private_key,
                         "LinkAmount": users[k].link
                     }
                     items.append(item)
@@ -184,8 +183,9 @@ def monitor(inteval=60):
                     # respond to server end
                     url='http://19o60w6992.51mypc.cn/sunday/link/callback'
                     # items=json.dumps(items)
-                    data=json.dumps({'LinkResult':items})
+                    data=json.dumps({'LinkResult1':items})
                     res0=requests.post(url,data=data)
+                    a=1
                 except:
                     pass
 

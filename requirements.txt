@@ -14,7 +14,6 @@ requests==2.19.1
 schedule==0.5.0
 shellescape==3.4.1
 six==1.11.0
-sqlite4dummy==0.0.6
 sseclient==0.0.18
 stellar-base==0.1.7.3
 toml==0.9.4

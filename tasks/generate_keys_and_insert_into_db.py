@@ -1,48 +1,47 @@
 # -*- coding: UTF-8 -*-
 
 import os
-import CONSTANT
+import CONSTANT1
 from wrapper import db as DB
+import requests
 
-NUMBER=CONSTANT.NUMBER_OF_ACCOUNTS
-TABLE_NAME=CONSTANT.DB_NAME
+NUMBER=CONSTANT1.NUMBER_OF_ACCOUNTS
+TABLE_NAME=CONSTANT1.TABLE_NAME
 
 
 path=os.getcwd()
-DB_NAME=path+TABLE_NAME
+DB_NAME=TABLE_NAME
 
 # 构造sql_manager： 这个实例用于操纵数据库操作
-my_sql_manager=DB.SQLManager(DB_NAME)
+my_pgmanager=DB.PGManager(**CONSTANT1.DB_CONNECT_ARGS_TEST)
 
 # 构造表结构：
 # 私钥|公钥|起始数量|起始时间|是否激活
-column1=DB.Column("private_key","TEXT",False,None,False)
-column2=DB.Column("public_key","TEXT",False,None,False)
-column3=DB.Column("starting_balance","REAL",True,None,False)
-column4=DB.Column("starting_time","BIGINT",True,None,False)
-column5=DB.Column("activated","BOOLEAN",True,None,False)
-columns=[]
-columns.extend([column1,column2,column3,column4,column5])
+create_table_sql='create table ' + TABLE_NAME + '(id SERIAL primary key ,user_token varchar(32),private_key varchar(128) not null,public_key varchar(128) not null , starting_balance decimal , starting_time bigint, is_activated int )'
+create_table_sql={'sql':create_table_sql}
 
-# 构造表：
-table=DB.Table(TABLE_NAME,columns)
-print(table.create_table_sql)
-
-# 在介质上创建表
-my_sql_manager.execute(table.create_table_sql)
+# post the create table function
+res=requests.post(CONSTANT1.BASE_URL + '/link/api/call/run/create_table', create_table_sql, verify=False)
+print(res.text)
 
 # 如果表上已经有记录了，那么就跳过这个过程：
-rows=my_sql_manager.execute('select count(*) from keys')
+sql='select count(*) from public.' + TABLE_NAME
+rows=my_pgmanager.select(sql)
 if rows.count>0:
     if rows[0][0]>=NUMBER:
         pass
     else:
+        sqls= []
         number=NUMBER-rows[0][0]  # 待生成的私钥数量
         # 生成NUMBER-rows[0][0]个密钥对
-        from tasks import distribution_key_generation
+        from tasks import key_generation
 
-        keypairs= distribution_key_generation.main(number)
+        keypairs= key_generation.generate_keypairs(number,'','',True)
 
+        a=1
         # 将这10000个密钥对存入数据库
-        my_sql_manager.execute_many("insert into " + TABLE_NAME + "(private_key,public_key) values(?,?)",keypairs)
+        for keypair in keypairs:
+            sqls.append({'private_key':keypair[0],'public_key':keypair[1]})
+        my_pgmanager.execute_many('insert into ' + TABLE_NAME + '(private_key,public_key) values(%(private_key)s,%(public_key)s)',sqls)
 
+my_pgmanager.close()

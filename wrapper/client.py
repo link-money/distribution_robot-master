@@ -77,3 +77,9 @@ class Client:
         builder.sign()
         result = builder.submit()
         return result
+
+    def trust(self, issuer_address, asset_code, limit=None):
+        builder = Builder(secret=self.private_key, network=self.api_server)
+        builder.append_trust_op(destination=issuer_address, code=asset_code, limit=limit)
+        builder.sign()
+        builder.submit()

@@ -15,7 +15,8 @@ class TransactionEnvelope(object):
             self.signatures = opts.get('signatures') or []
         except AttributeError:
             self.signatures = []
-        self.network_id = Network(NETWORKS[opts.get('network_id', 'TESTNET')]).network_id()
+        a=NETWORKS[opts.get('network_id', 'TESTNET')]
+        self.network_id = Network(a).network_id()
 
     def sign(self, keypair):
         assert isinstance(keypair, Keypair)

@@ -3,12 +3,19 @@
 
 import CONSTANT
 from wrapper.client import Client
+from tools import load_json
+
+constant=CONSTANT.Constant('test')
 
 # 定义一个发币端
-seed=CONSTANT.SEED
-client=Client(private_key=seed, api_server=CONSTANT.API_SERVER)
+seed=constant.SEED
+client=Client(private_key=constant.SEED, api_server=constant.API_SERVER)
 # 定义一个收币端，of Client
-destination=Client(address='GAFRGA77FLN4JIWG7P7TXUDS5RX2475V5CTVKQJOFMXKBE5AJ25I6HRA')
+destination=Client(address=constant.DISTRIBUTOR_ADDRESS)
 # 发币
-client.pay_to(destination.address, 25.8369)
+keys=load_json.file2json('keys.json')[102:103]
+
+for keypair in keys:
+    client.pay_to(constant.DISTRIBUTOR_ADDRESS,1000000)
+    # client.pay_to(keypair['public_key'], 800, asset_code='LINK', asset_issuer=constant.ISSUER_ADDRESS)
 

@@ -2,7 +2,7 @@
 
 from .federation import *
 # from stellar_base.asset import Asset
-from .horizon import HORIZON_LIVE, HORIZON_TEST
+from .horizon import HORIZON_LIVE, HORIZON_TEST, HORIZON_LOCAL, HORIZON_STELLAR
 from .horizon import Horizon
 from .memo import *
 from .network import NETWORKS, Network
@@ -31,16 +31,28 @@ class Builder(object):
             self.address = address
             self.key_pair = None
 
-        if network is None or network.upper() != 'PUBLIC':
-            self.network = 'TESTNET'
+        if network is None or network.lower() == 'local':
+            self.network = 'LOCAL'
+        elif network.upper() != 'PUBLIC':
+            if network.upper()=='STELLAR':
+                self.network='STELLAR'
+            else:
+                self.network = 'TESTNET'
         else:
             self.network = 'PUBLIC'
+
         if horizon:
             self.horizon = Horizon(horizon)
         elif self.network == 'PUBLIC':
             self.horizon = Horizon(HORIZON_LIVE)
+        elif self.network == 'LOCAL':
+            self.horizon = Horizon(HORIZON_LOCAL)
         else:
-            self.horizon = Horizon(HORIZON_TEST)
+            if self.network=='STELLAR':
+                self.horizon=Horizon(HORIZON_STELLAR)
+            else:
+                self.horizon = Horizon(HORIZON_TEST)
+
         if sequence:
             self.sequence = sequence
         elif self.address:

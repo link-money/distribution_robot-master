@@ -17,6 +17,8 @@ except ImportError:
 
 HORIZON_LIVE = "http://47.75.115.19:8888"   # 主API服务器
 HORIZON_TEST = "http://116.62.226.231:8888" # 测试API服务器
+HORIZON_LOCAL = "http://localhost:8888"
+HORIZON_STELLAR = "https://horizon.stellar.org/"
 
 
 def query(url, params=None, sse=False):
@@ -40,6 +42,7 @@ class Horizon(object):
     def __init__(self, horizon=None):
         if horizon is None:
             self.horizon = HORIZON_TEST
+
         else:
             self.horizon = horizon
 
@@ -163,3 +166,9 @@ def horizon_testnet():
 
 def horizon_livenet():
     return Horizon(HORIZON_LIVE)
+
+def horizon_localnet():
+    return Horizon(HORIZON_LOCAL)
+
+def horizon_stellar():
+    return Horizon(HORIZON_STELLAR)

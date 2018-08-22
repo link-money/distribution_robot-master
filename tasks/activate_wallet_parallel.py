@@ -8,10 +8,10 @@ starting_balance=STARTING_BALANCE
 from wrapper import db as DB
 from wrapper import client as Client
 import threading
-import CONSTANT
+import CONSTANT1
 
 
-DB_NAME=CONSTANT.DB_NAME
+DB_NAME=CONSTANT1.DB_NAME
 
 # 构造sql_manager： 这个实例用于操纵数据库操作
 my_sql_manager=DB.SQLManager(DB_NAME)

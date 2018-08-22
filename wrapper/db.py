@@ -13,6 +13,7 @@ DB_NAME=''
 import os
 import sqlite3
 import sqlite4dummy
+import psycopg2
 
 class Column():
     """Represent a Column in a :class:`Table`.
@@ -228,3 +229,31 @@ class SQLManager():
         self.conn.executemany(sql,args)
         self.conn.commit()
 
+class PGManager():
+    def __init__(self, database='', user='', pw='', host='', port=''):
+        self.conn_args={'database':database, 'user':user, 'password':pw, 'host':host, 'port':port}
+
+    def execute(self,sql):
+        self.conn = psycopg2.connect(**self.conn_args)
+        cursor=self.conn.cursor()
+        cursor.execute(sql)
+        self.conn.commit()
+        self.conn.close()
+
+    def select(self, sql):
+        self.conn = psycopg2.connect(**self.conn_args)
+        cursor = self.conn.cursor()
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        self.conn.close()
+        return rows
+
+    def execute_many(self,query, sql_sequence):
+        self.conn = psycopg2.connect(**self.conn_args)
+        cursor=self.conn.cursor()
+        cursor.executemany(query, sql_sequence)
+        self.conn.commit()
+        self.conn.close()
+
+    def close(self):
+        self.conn.close()

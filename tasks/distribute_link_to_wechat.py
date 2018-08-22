@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
-
+import sys
+sys.path.append("..")
 from wrapper import db as DB
 from wrapper import builder as BUILDER
 from wrapper import client as CLIENT

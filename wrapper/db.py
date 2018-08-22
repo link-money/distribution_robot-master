@@ -12,179 +12,178 @@ DB_NAME=''
 
 import os
 import sqlite3
-import sqlite4dummy
 import psycopg2
-
-class Column():
-    """Represent a Column in a :class:`Table`.
-
-    Construct a Column object::
-
-        >>> from sqlite4dummy import *
-        >>> c = Column("employee_id", dtype.TEXT, primary_key=True)
-        >>> c
-        Column('employee_id', dtype.TEXT, nullable=True, default=None, primary_key=True)
-
-    :param column_name: the column name, alpha, digit and understore only.
-      Can't start with digit.
-    :type column_name: string
-
-    :param data_type: Data type object.
-
-    :param nullable: (default True) whether it is allow None value.
-    :type nullable: boolean
-
-    :param default: (default None) default value.
-    :type default: any Python types
-
-    :param primary_key: (default False) whether it is a primary_key.
-    :type primary_key: boolean
-
-    For usage example, go :mod:`unittest page<sqlite4dummy.tests.test_Column>`
-    and read the testcase source code.
-    """
-
-    def __init__(self, column_name, data_type,
-                 nullable=True, default=None, primary_key=False, auto_increment=False):
-
-        self.column_name = column_name
-        self.full_name = column_name
-        self.table_name = None
-
-        self.data_type = data_type
-        self.nullable = nullable
-        self.default = default
-        self.primary_key = primary_key
-        if primary_key == True:
-            self.auto_increment=True
-        else:
-            self.auto_increment=False
-
-
-class Table(object):
-    """Represent a table in a database.
-
-    Define a Table::
-
-        >>> from sqlite4dummy import *
-        >>> metadata = MetaData()
-        >>> mytable = Table("mytable", metadata,
-                Column("mytable_id", dtype.INTEGER, primary_key=True),
-                Column("value", dtype.TEXT),
-                )
-
-    columns can be accessed by table.c.column_name::
-
-        >>> mytable.c.mytable_id # return a Column object
-        _id
-
-    :param table_name: the table name, alpha, digit and understore only.
-      Can't start with digit.
-    :type table_name: string
-
-    :param metadata: Data type object.
-    :type metadata: :class:`MetaData`
-
-    :param args: list of Column object
-    :type args: :class:`Column`
-
-    For usage example, go :mod:`unittest page<sqlite4dummy.tests.test_Table>`
-    and read the testcase source code.
-
-    **中文文档**
-
-    :class:`sqlite4dummy.schema.Table` 是抽象数据表对象类。
-
-    定义Table的方法如下::
-
-        >>> from sqlite4dummy import *
-        >>> metadata = MetaData() # 定义metadata
-        >>> mytable = Table("mytable", metadata, # 定义表名, metadata和列
-                Column("mytable_id", dtype.INTEGER, primary_key=True),
-                Column("value", dtype.TEXT),
-                )
-
-    从Table中获得Column对象有如下两种方法::
-
-        >>> mytable.c._id
-        _id
-
-        >>> mytable.get_column("_id")
-        _id
-    """
-
-    def __init__(self, table_name, columns, auto_ID=True):
-
-        self.table_name = table_name
-        self.all = list()
-        self.column_names = list()
-
-        self.primary_key_columns = list()
-        self.pickletype_columns = list()
-
-        self.columns=[]
-
-        if auto_ID==True:
-            ID_column=Column(column_name="ID",data_type="INTEGER",nullable=False,default=0,primary_key=True)
-            self.columns.append(ID_column)
-        self.columns.extend(columns)
-
-        for column in columns:
-            self.column_names.append(column.column_name)
-            if column.primary_key:  # 定位PRIMARY KEY的列
-                self.primary_key_columns.append(column.column_name)
-
-        self.create_table_sql = CreateTable(self).sql
-
-
-
-class CreateTable(object):
-    """Generate 'CREATE TABLE' SQL statement.
-
-    Example::
-
-        CREATE TABLE table_name
-        (
-            column_name1 dtype1 CONSTRAINS,
-            column_name2 dtype2 CONSTRAINS,
-            PRIMARY KEY (column, ...),
-            FOREIGN KEY (table_column, ...)
-        )
-
-    **中文文档**
-
-    创建Table的抽象类, 用于根据Schema生成CREATE TABLE ...的SQL语句。目前不支持
-    FOREIGN KEY语法。
-    """
-
-    def __init__(self, table):
-        clause_CREATE_TABLE = "CREATE TABLE {} ".format(table.table_name)
-        field_list = []
-        for column in table.columns:
-            field_list.append(column.column_name+"\t"+column.data_type+"\t"+
-                              ("NOT NULL" if column.nullable==False else "") +"\t" +
-                              ("PRIMARY KEY\tAUTOINCREMENT" if column.primary_key==True else ""))
-        clause_DATATYPE=",".join(field_list)
-        self.sql="%s\n(\n%s\n)" % (
-            clause_CREATE_TABLE, clause_DATATYPE)
-
-        # query_string += ",".join(field_list)
-        # query_string += ");"
-        # clause_CREATE_TABLE = "CREATE TABLE %s" % table.table_name
-        #
-        # clause_DATATYPE = "\t" + ",\n\t".join(
-        #     [self._column_param(column) for column in table]
-        # )
-        #
-        # if len(table.primary_key_columns) == 0:
-        #     clause_PRIMARY_KEY = ""
-        # else:
-        #     clause_PRIMARY_KEY = ",\n\tPRIMARY KEY (%s)" % ", ".join(
-        #         table.primary_key_columns)
-        #
-        # self.sql = "%s\n(\n%s%s\n)" % (
-        #     clause_CREATE_TABLE, clause_DATATYPE, clause_PRIMARY_KEY)
-
+#
+# class Column():
+#     """Represent a Column in a :class:`Table`.
+#
+#     Construct a Column object::
+#
+#         >>> from sqlite4dummy import *
+#         >>> c = Column("employee_id", dtype.TEXT, primary_key=True)
+#         >>> c
+#         Column('employee_id', dtype.TEXT, nullable=True, default=None, primary_key=True)
+#
+#     :param column_name: the column name, alpha, digit and understore only.
+#       Can't start with digit.
+#     :type column_name: string
+#
+#     :param data_type: Data type object.
+#
+#     :param nullable: (default True) whether it is allow None value.
+#     :type nullable: boolean
+#
+#     :param default: (default None) default value.
+#     :type default: any Python types
+#
+#     :param primary_key: (default False) whether it is a primary_key.
+#     :type primary_key: boolean
+#
+#     For usage example, go :mod:`unittest page<sqlite4dummy.tests.test_Column>`
+#     and read the testcase source code.
+#     """
+#
+#     def __init__(self, column_name, data_type,
+#                  nullable=True, default=None, primary_key=False, auto_increment=False):
+#
+#         self.column_name = column_name
+#         self.full_name = column_name
+#         self.table_name = None
+#
+#         self.data_type = data_type
+#         self.nullable = nullable
+#         self.default = default
+#         self.primary_key = primary_key
+#         if primary_key == True:
+#             self.auto_increment=True
+#         else:
+#             self.auto_increment=False
+#
+#
+# class Table(object):
+#     """Represent a table in a database.
+#
+#     Define a Table::
+#
+#         >>> from sqlite4dummy import *
+#         >>> metadata = MetaData()
+#         >>> mytable = Table("mytable", metadata,
+#                 Column("mytable_id", dtype.INTEGER, primary_key=True),
+#                 Column("value", dtype.TEXT),
+#                 )
+#
+#     columns can be accessed by table.c.column_name::
+#
+#         >>> mytable.c.mytable_id # return a Column object
+#         _id
+#
+#     :param table_name: the table name, alpha, digit and understore only.
+#       Can't start with digit.
+#     :type table_name: string
+#
+#     :param metadata: Data type object.
+#     :type metadata: :class:`MetaData`
+#
+#     :param args: list of Column object
+#     :type args: :class:`Column`
+#
+#     For usage example, go :mod:`unittest page<sqlite4dummy.tests.test_Table>`
+#     and read the testcase source code.
+#
+#     **中文文档**
+#
+#     :class:`sqlite4dummy.schema.Table` 是抽象数据表对象类。
+#
+#     定义Table的方法如下::
+#
+#         >>> from sqlite4dummy import *
+#         >>> metadata = MetaData() # 定义metadata
+#         >>> mytable = Table("mytable", metadata, # 定义表名, metadata和列
+#                 Column("mytable_id", dtype.INTEGER, primary_key=True),
+#                 Column("value", dtype.TEXT),
+#                 )
+#
+#     从Table中获得Column对象有如下两种方法::
+#
+#         >>> mytable.c._id
+#         _id
+#
+#         >>> mytable.get_column("_id")
+#         _id
+#     """
+#
+#     def __init__(self, table_name, columns, auto_ID=True):
+#
+#         self.table_name = table_name
+#         self.all = list()
+#         self.column_names = list()
+#
+#         self.primary_key_columns = list()
+#         self.pickletype_columns = list()
+#
+#         self.columns=[]
+#
+#         if auto_ID==True:
+#             ID_column=Column(column_name="ID",data_type="INTEGER",nullable=False,default=0,primary_key=True)
+#             self.columns.append(ID_column)
+#         self.columns.extend(columns)
+#
+#         for column in columns:
+#             self.column_names.append(column.column_name)
+#             if column.primary_key:  # 定位PRIMARY KEY的列
+#                 self.primary_key_columns.append(column.column_name)
+#
+#         self.create_table_sql = CreateTable(self).sql
+#
+#
+#
+# class CreateTable(object):
+#     """Generate 'CREATE TABLE' SQL statement.
+#
+#     Example::
+#
+#         CREATE TABLE table_name
+#         (
+#             column_name1 dtype1 CONSTRAINS,
+#             column_name2 dtype2 CONSTRAINS,
+#             PRIMARY KEY (column, ...),
+#             FOREIGN KEY (table_column, ...)
+#         )
+#
+#     **中文文档**
+#
+#     创建Table的抽象类, 用于根据Schema生成CREATE TABLE ...的SQL语句。目前不支持
+#     FOREIGN KEY语法。
+#     """
+#
+#     def __init__(self, table):
+#         clause_CREATE_TABLE = "CREATE TABLE {} ".format(table.table_name)
+#         field_list = []
+#         for column in table.columns:
+#             field_list.append(column.column_name+"\t"+column.data_type+"\t"+
+#                               ("NOT NULL" if column.nullable==False else "") +"\t" +
+#                               ("PRIMARY KEY\tAUTOINCREMENT" if column.primary_key==True else ""))
+#         clause_DATATYPE=",".join(field_list)
+#         self.sql="%s\n(\n%s\n)" % (
+#             clause_CREATE_TABLE, clause_DATATYPE)
+#
+#         # query_string += ",".join(field_list)
+#         # query_string += ");"
+#         # clause_CREATE_TABLE = "CREATE TABLE %s" % table.table_name
+#         #
+#         # clause_DATATYPE = "\t" + ",\n\t".join(
+#         #     [self._column_param(column) for column in table]
+#         # )
+#         #
+#         # if len(table.primary_key_columns) == 0:
+#         #     clause_PRIMARY_KEY = ""
+#         # else:
+#         #     clause_PRIMARY_KEY = ",\n\tPRIMARY KEY (%s)" % ", ".join(
+#         #         table.primary_key_columns)
+#         #
+#         # self.sql = "%s\n(\n%s%s\n)" % (
+#         #     clause_CREATE_TABLE, clause_DATATYPE, clause_PRIMARY_KEY)
+#
 
 class SQLManager():
     def __init__(self, db_name):

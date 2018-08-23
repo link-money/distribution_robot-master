@@ -183,17 +183,15 @@ def monitor(inteval=60):
                     # respond to server end
                     url='http://19o60w6992.51mypc.cn/sunday/link/callback'
                     # items=json.dumps(items)
-                    data=json.dumps({'LinkResult1':items})
-                    res0=requests.post(url,data=data)
+                    # data=json.dumps({'LinkResult1':items})
+                    data='LinkResult='+json.dumps(items)
+                    res0=requests.get(url+'?'+data)
                     a=1
                 except:
                     pass
-
-
                 print('-' * 60)
                 print('Link distributed successfully\tin %ss' % (t0,))
                 print('-' * 60 + '\n')
-
         else:
             t0 = time.time() - t0
             print('-' * 60)
